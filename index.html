@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="#">
     <title>CRUDScope</title>
 </head>
 <body>
-    
+    <header><h1><u>CRUDScope</u></h1></header>
+    <nav>
+        <ul>
+        <a href="#create">Create</a>
+        <a href="#list">List</a>
+        <a href="#table">Table</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#about">About</a>
+        </ul>
+    </nav>
+    <main>
+        <section id="create">
+            <h1>Create task</h1>
+            <hr>
+            <form>
+                <label for="titulo"><b>Task:</b></label>
+                <input type="text" id="titulo">
+
+                <label for="fecha"><strong>Date:</strong></label>
+                <input type="date" id="fecha">
+
+                <label for="descripcion"><em>Description:</em></label>
+                <textarea id="descripcion"></textarea>
+
+                <button type="submit"><i>Create</i></button>
+            </form>
+        </section>
+        <br><br><br>
+        <section>
+            <h1 id="list">Task List</h1>
+            <hr>
+            <ul>
+                <p><h3>Surface cleaning</h3>Wipe down tables, countertops, desks, and furniture with a damp cloth or disinfectant to keep the space free of dust and bacteria.</p>
+                <p><h3>Sweep and mop the floor</h3>Remove dirt, crumbs, and dust from the floor. Then mop to leave the floor clean and fresh.</p>
+                <p><h3>Wash the dishes</h3>Clean the utensils used during the day to avoid bad smells and keep the kitchen tidy.</p>
+                <p><h3>Organize and store objects</h3>Check each room and return items to their proper place to avoid accumulated clutter.</p>
+                <p><h3>Take out the trash</h3>Empty the trash cans and take the bags to the outside container to prevent bad smells and maintain home hygiene.</p>
+            </ul>
+        </section>
+        <br><br><br>
+        <article id="table">
+            <h1>Task Table</h1>
+            <hr>
+            <table>
+                <tr>
+                    <th><h3 id="date">Date complete</h3></th>
+                    <th><h3 id="task">Task completed</h3></th>
+                    <th><h3 id="name">Person's name</h3></th>
+                </tr>
+                <tr>
+                    <td>05/12/2025</td>
+                    <td>Clean garage</td>
+                    <td>Julian Aponte</td>
+                </tr>
+            </table>
+            <form><br><br>
+                <label for="date"><b>Date:</b></label>
+                <input type="date" id="date">
+
+                <label for="task"><strong>Task:</strong></label>
+                <input type="text" id="task">
+
+                <label for="name"><em>Name Person:</em></label>
+                <input type="text" id="name">
+                <button type="submit"><i>Complete</i></button>
+            </form>
+        <br><br><br>
+        </article>
+        <aside>
+            <h1>Tips</h1>
+            <ul>
+                <p>Keep a photographic record</p>
+                <p>Use the right tools for the job</p>
+                <p>Use a back harness</p>
+            </ul>
+        </aside>
+        <br><br><br>
+        <div id="multimedia">
+            <h2>Audio Example</h2>
+            <audio controls>
+                <source src="multimedia/audio_example.mp3" type="audio/mp3">
+                Your browser does not support audio playback.
+            </audio>
+        </div>
+        <br><br><br>
+        <div>
+            <h2>Video Example</h2>
+            <video controls width="300" poster="multimedia/cat_image.webp">
+                <source src="multimedia/piano_cat.mp4" type="video/mp4">
+                Your browser does not support audio playback.
+            </video>
+        </div>
+    </main>
+<footer id="about">
+    <br><br>
+    <address>
+        <h4>About me</h4>
+        <a href="https://github.com/JulianAponte">Github profile</a>
+        <p><abbr title="Create, delete, update & delete">C.R.U.D </abbr> page</p>
+    </address>
+</footer>
 </body>
 </html>
